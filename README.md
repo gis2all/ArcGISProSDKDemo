@@ -1,6 +1,6 @@
 ### What it can do
 
-Adding,remove,modify and search layer in the OperationalLayer of ArcGIS Pro
+Add,remove,modify and search layer in the OperationalLayer of ArcGIS Pro
 
 ### Dependency
 
