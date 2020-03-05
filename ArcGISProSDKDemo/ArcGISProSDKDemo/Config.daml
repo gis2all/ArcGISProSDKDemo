@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArcGIS defaultAssembly="ArcGISProSDKDemo.dll"
+        defaultNamespace="ArcGISProSDKDemo"
+        xmlns="http://schemas.esri.com/DADF/Registry"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{a225cac5-5c97-4ae5-8272-7178cbd4579e}" version="1.0" desktopVersion="2.5.22081">
+    <Name>ArcGISProSDKDemo</Name>
+    <Description>ArcGISProSDKDemo description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>12620</Author>
+    <Company>Acme</Company>
+    <Date>3/5/2020 10:32:21 AM, 2020</Date>
+    <Subject>Framework</Subject>
+  </AddInInfo>
+  <modules>
+    <insertModule id="ArcGISProSDKDemo_Module" className="Module1" autoLoad="false" caption="Module1">
+      <groups>
+        <group id="ArcGISProSDKDemo_Group1" caption="Operational Layer" appearsOnAddInTab="true" keytip="AIG">
+          <button refID="AddDataToOperationalLayerButton"/>
+          <button refID="RemoveLayerFromOperationalLayerButton"/>
+          <button refID="ChangeLayerInOperationalLayerButton"/>
+          <button refID="SearchLayerInOperationalLayerButton"/>
+        </group>
+      </groups>
+
+      <controls>
+        <button id ="AddDataToOperationalLayerButton" caption="Add data to OperationalLayer" className="AddDataToOperationalLayerButton"
+            loadOnClick="false" smallImage="Images\AddInDesktop32.png" largeImage="Images\AddInDesktop32.png" keytip="ADO">
+          <tooltip>Add data to OperationalLayer</tooltip>
+        </button>
+        <button id ="RemoveLayerFromOperationalLayerButton" caption="Remove first layer from OperationalLayer" className="RemoveLayerFromOperationalLayerButton"
+           loadOnClick="false" smallImage="Images\AddInDesktop32.png" largeImage="Images\AddInDesktop32.png" keytip="ADO">
+          <tooltip>Remove first layer from OperationalLayer</tooltip>
+        </button>
+        <button id ="ChangeLayerInOperationalLayerButton" caption="Change first layer in OperationalLayer" className="ChangeLayerInOperationalLayerButton"
+           loadOnClick="false" smallImage="Images\AddInDesktop32.png" largeImage="Images\AddInDesktop32.png" keytip="ADO">
+          <tooltip>Search first layer in OperationalLayer</tooltip>
+        </button>
+        <button id ="SearchLayerInOperationalLayerButton" caption="Search first layer in OperationalLayer" className="SearchLayerInOperationalLayerButton"
+           loadOnClick="false" smallImage="Images\AddInDesktop32.png" largeImage="Images\AddInDesktop32.png" keytip="ADO">
+          <tooltip>Search first layer in OperationalLayer</tooltip>
+        </button>
+      </controls>
+    </insertModule>
+  </modules>
+</ArcGIS>
